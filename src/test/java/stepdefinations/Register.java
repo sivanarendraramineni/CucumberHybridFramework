@@ -32,14 +32,9 @@ public class Register {
 	public void setup(){
 		
 		
-		  //  DriverSetup.initBrower("chrome");
-		  // driver=DriverSetup.getDriver();
-		ChromeOptions options = new ChromeOptions();
+		 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
 		 driver = new ChromeDriver(options);
-		//WebDriver driver=new ChromeDriver();
-		//driver.manage().window().maximize();
-		//driver.get("http://tutorialsninja.com/demo/");
 			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
